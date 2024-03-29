@@ -8,11 +8,14 @@ namespace IntifaceConnectorPlugin.Scripts {
         public static Action onNewDevice;
         public static bool clientInitialized { get; private set; }
 
-        [DllImport("__Internal")]
-        private static extern void _Vibe(int _intesity);
+        [DllImport("__Internal")] private static extern void _Vibe(int _intesity);
 
         public int intensity { get; private set; }
 
+        public void Vibe(int newIntensity) {
+            intensity = Mathf.Clamp(newIntensity, 0, 100);
+            UpdateDevices();
+        }
         
         public void OnClientInit() {
             clientInitialized = true;
@@ -22,11 +25,6 @@ namespace IntifaceConnectorPlugin.Scripts {
         public void OnNewDevice() {
             UpdateDevices();
             onNewDevice?.Invoke();
-        }
-
-        public void Vibe(int newIntensity) {
-            intensity = Mathf.Clamp(newIntensity, 0, 100);
-            UpdateDevices();
         }
 
         private void UpdateDevices() {
