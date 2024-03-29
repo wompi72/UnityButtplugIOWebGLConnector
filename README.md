@@ -8,6 +8,9 @@ In the `Project Settings/Player` you can now select `IntifaceTemplate` as your W
 
 Use the methods in IntifaceConntector to control connected devices.
 
+## Testing XToys integration:
+The [itch.io script](https://xtoys.app/scripts/-NtDUDJZeeKhInEXcS-4) can be edited to work for other urls (e.g. localhost)
+
 # For Users:
 ## Connect Vibrator:
 ### [Intiface](https://intiface.com/): 
