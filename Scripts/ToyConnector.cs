@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 
 namespace IntifaceConnectorPlugin.Scripts {
-    public class IntifaceConnector : MonoBehaviour {
+    public class ToyConnector : MonoBehaviour {
         public static Action onClientInit;
         public static Action onNewDevice;
         public static bool clientInitialized { get; private set; }

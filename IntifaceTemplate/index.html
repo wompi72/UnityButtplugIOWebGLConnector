@@ -211,9 +211,9 @@
 
     async function SetUpClient() {
         buttplug_client = new buttplug.ButtplugClient("Unity Client");
-        myUnityInstance.SendMessage('IntifaceConnector', 'OnClientInit');
+        myUnityInstance.SendMessage('ToyConnector', 'OnClientInit');
         buttplug_client.addListener('deviceadded', async (device) => {
-            myUnityInstance.SendMessage('IntifaceConnector', 'OnNewDevice');
+            myUnityInstance.SendMessage('ToyConnector', 'OnNewDevice');
         });
         connect_button.onclick=userConnectToIntiface;
         connect_button.disabled = false;

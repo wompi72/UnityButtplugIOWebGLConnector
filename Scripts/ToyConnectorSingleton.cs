@@ -2,8 +2,8 @@
 using UnityEngine;
 
 namespace IntifaceConnectorPlugin.Scripts {
-    public class IntifaceConnectorSingleton : IntifaceConnector {
-        public static IntifaceConnectorSingleton Instance { get; protected set; }
+    public class ToyConnectorSingleton : ToyConnector {
+        public static ToyConnectorSingleton Instance { get; protected set; }
         private void Awake() {
             if (Instance != null && Instance != this) {
                 Destroy(gameObject);

@@ -1,4 +1,4 @@
-# UnityIntifaceWebGLConnector
+# UnityButtplugIOWebGLConnector
 
 Clone the project into your `Assets` directory.
 
@@ -6,7 +6,8 @@ Create the `WebGLTemplates` directory (in `Assets`) and move or copy the `Intifa
 
 In the `Project Settings/Player` you can now select `IntifaceTemplate` as your WebGL Template.
 
-Use the methods in IntifaceConntector to control connected devices.
+Add a GameObject named `ToyConntector` to your first scene and add the `ToyConntector` or `ToyConntectorSingleton` script.
+Use the methods of those scripts to control toys.
 
 ## Testing XToys integration:
 The [itch.io script](https://xtoys.app/scripts/-NtDUDJZeeKhInEXcS-4) can be edited to work for other urls (e.g. localhost)
