@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-namespace WebGLTemplates.IntifaceTemplate.Assets {
+namespace IntifaceConnectorPlugin.Scripts {
     public class IntifaceConnector : MonoBehaviour {
         public static Action onClientInit;
         public static Action onNewDevice;

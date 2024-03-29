@@ -1,8 +1,8 @@
 # UnityIntifaceWebGLConnector
 
-In `Asset` folder execute `git clone git@github.com:wompi72/UnityIntifaceWebGLConnector.git WebGLTemplates/`
+In `Asset` folder execute `git clone git@github.com:wompi72/UnityIntifaceWebGLConnector.git`
 
-It's important that the folder is called `WebGLTemplates` and placed directly in the `Assets` directory.
+Create the `WebGLTemplates` directory (in `Assets`) and move or copy the `IntifaceTemplate` directory into that directory.
 
 In the `Project Settings/Player` you can now select `IntifaceTemplate` as your WebGL Template.
 
